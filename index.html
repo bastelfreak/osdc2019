@@ -4,10 +4,13 @@
     <title>Vox Pupuli - Empowering the Puppet Community - Tim Meusel</title>
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
     <style type="text/css">
-      @import url(//fonts.googleapis.com/css?family=Yanone+Kaffeesatz);
-      @import url(//fonts.googleapis.com/css?family=Droid+Serif:400,700,400italic);
-      @import url(//fonts.googleapis.com/css?family=Ubuntu+Mono:400,700,400italic);
-         body {
+      @font-face {
+        font-family: 'Yanone Kaffeesatz';
+        font-style: normal;
+        font-weight: 400;
+        src: local('Yanone Kaffeesatz Regular'), local('YanoneKaffeesatz-Regular'), url(YDAoLskQQ5MOAgvHUQCcLbvy90DtE_Pg_qiF9bHvTzw.ttf) format('truetype');
+      }
+      body {
         font-family: 'Droid Serif';
       }
       h1, h2, h3 {
@@ -145,6 +148,7 @@ class: center, middle, inverse
 
 # Vox Pupuli - Empowering the Puppet Community
 
+## Spontaneous OSDC 2019 Edition
 ---
 
 background-image: url(blue-skies.jpg)
@@ -154,7 +158,7 @@ background-size: cover
 
 * Tim 'bastelfreak' Meusel
 
-* Systems Engineer for heg.com
+* DevOps Engineer at GoDaddy EMEA
 
 * Puppet Contributor since 2012
 
@@ -171,10 +175,16 @@ background-size: cover
 
 .left-column[
 
-## What is Vox Pupuli?
+### What?
 
 ]
 .right-column[
+
+* Maintain many many Puppet modules
+
+* Be helpful and polite to each other
+
+ * Be open-minded to people and technology
 
 * Provide a home for orphaned Puppet modules
 
@@ -184,7 +194,7 @@ background-size: cover
 
 ]
 
-.footnote[@bastelsblog for @voxpupuliorg]
+.footnote[[@bastelsblog](https://twitter.com/bastelsblog) for [@voxpupuliorg](https://twitter.com/voxpupuliorg)]
 
 ---
 
@@ -195,15 +205,22 @@ background-size: cover
 
 .left-column[
 
-## Who is Vox Pupuli?
+### What?
+### Who?
 
 ]
 
 .right-column[
 
-* Currently 80 people with merge permissions
+* Currently 134 people with merge permissions
 
-* A few people work for Puppet Inc.
+  * We were 113 in February 2018
+
+  * We were 107 in October 2017
+
+  * We were 80 in November 2016
+
+* Just a few people work for Puppet Inc.
 
 * Most of the contributors participate in their free time
 
@@ -211,7 +228,7 @@ background-size: cover
 
 ]
 
-.footnote[@bastelsblog for @voxpupuliorg]
+.footnote[[@bastelsblog](https://twitter.com/bastelsblog) for [@voxpupuliorg](https://twitter.com/voxpupuliorg)]
 
 ---
 
@@ -222,7 +239,8 @@ background-size: cover
 
 .left-column[
 
-## Who is Vox Pupuli?
+### What?
+### Who?
 
 ]
 
@@ -231,13 +249,19 @@ background-size: cover
 
 * Many git newbies
 
+  * Rebasing a feature branch against upstream master is hard
+
+* Many newcomers to test frameworks
+
+  * Dealing with rspec/rubocop/beaker is hard as well
+
 * Many administrators of legacy infrastructures
 
-  * Puppet2.7, Ruby187
+  * Stuff older than Puppet 5 without proper hiera5/datatype support
 
 ]
 
-.footnote[@bastelsblog for @voxpupuliorg]
+.footnote[[@bastelsblog](https://twitter.com/bastelsblog) for [@voxpupuliorg](https://twitter.com/voxpupuliorg)]
 
 ---
 
@@ -248,7 +272,9 @@ background-size: cover
 
 .left-column[
 
-## Why is Vox Pupuli?
+### What?
+### Who?
+### Why?
 
 ]
 
@@ -262,9 +288,15 @@ background-size: cover
 
   * Ruby ecosystem and related tools are changing too fast for a single person
 
+  * Everything has to work on multiple Ruby/Puppet versions
+
+  * Rubocop
+
+  * Rubocop
+
 ]
 
-.footnote[@bastelsblog for @voxpupuliorg]
+.footnote[[@bastelsblog](https://twitter.com/bastelsblog) for [@voxpupuliorg](https://twitter.com/voxpupuliorg)]
 
 ---
 
@@ -298,7 +330,7 @@ background-size: cover
 
 .right-column[
 
-* We are managing more than 70 modules
+* We are managing more than 113 modules
 
 * modulesync was developed by Puppet Inc, moved to Vox Pupuli
 
@@ -308,7 +340,7 @@ background-size: cover
 
 ]
 
-.footnote[@bastelsblog for @voxpupuliorg]
+.footnote[[@bastelsblog](https://twitter.com/bastelsblog) for [@voxpupuliorg](https://twitter.com/voxpupuliorg)]
 
 ---
 
@@ -335,11 +367,11 @@ background-size: cover
 
 * release modules to the forge
 
-* 10-60min per module, doesn't scale :sadface:
+* 10-60min per module
 
 ]
 
-.footnote[@bastelsblog for @voxpupuliorg]
+.footnote[[@bastelsblog](https://twitter.com/bastelsblog) for [@voxpupuliorg](https://twitter.com/voxpupuliorg)]
 
 ---
 
@@ -369,37 +401,7 @@ background-size: cover
 
 ]
 
-.footnote[@bastelsblog for @voxpupuliorg]
-
----
-
-background-image: url(blue-skies.jpg)
-background-size: cover
-
-## Vox Pupuli
-
-.left-column[
-
-## How?
-### modulesync
-### travis
-### beaker
-
-]
-
-.right-column[
-
-* creates a virtual machine or docker instance
-
-* starts a complete OS in it
-
-* executes puppet in it
-
-* checks if everything looks as expected
-
-]
-
-.footnote[@bastelsblog for @voxpupuliorg]
+.footnote[[@bastelsblog](https://twitter.com/bastelsblog) for [@voxpupuliorg](https://twitter.com/voxpupuliorg)]
 
 ---
 background-image: url(blue-skies.jpg)
@@ -424,11 +426,9 @@ Can be executed:
 
 * with docker on travis
 
-* on our own infra with docker or QEMU/Virtualbox
-
 ]
 
-.footnote[@bastelsblog for @voxpupuliorg]
+.footnote[[@bastelsblog](https://twitter.com/bastelsblog) for [@voxpupuliorg](https://twitter.com/voxpupuliorg)]
 
 ---
 
@@ -456,39 +456,16 @@ background-size: cover
 
   * Also open PRs
 
-]
+* https://github.com/voxpupuli/thevoxfox
 
-.footnote[@bastelsblog for @voxpupuliorg]
-
----
-
-background-image: url(blue-skies.jpg)
-background-size: cover
-
-## Vox Pupuli
-
-.left-column[
-
-## How?
-### modulesync
-### travis
-### beaker
-### Tooling
-]
-
-.right-column[
-
-* http://voxpupuli.bastelfreak.de/
-
-  * IRC stats
+  * IRC bot, allows us to merge stuff + trigger modulesync (soon, maybe)
 
 * https://github.com/bastelfreak/contributorstats
 
   * count contributions
-
 ]
 
-.footnote[@bastelsblog for @voxpupuliorg]
+.footnote[[@bastelsblog](https://twitter.com/bastelsblog) for [@voxpupuliorg](https://twitter.com/voxpupuliorg)]
 
 ---
 
@@ -516,23 +493,25 @@ background-size: cover
 .left-column[
 
 ## Governance?
-###PMC
+### PMC
 
 ]
 
 .right-column[
 
-* We elected a Project Management Committee this fall!
+* We elected our third Project Management Committee last fall!
 
 * PMC enforces CoC
 
 * Brings Vox Pupuli into the Software Freedom Conservancy
 
+  * (This point is on the slides since 2016. But we're almost done! "Just" every PMC member needs to sign a document from the SFC)
+
 * PMC guidelines are created by the community https://tinyurl.com/voxpupul-governance-md
 
 ]
 
-.footnote[@bastelsblog for @voxpupuliorg]
+.footnote[[@bastelsblog](https://twitter.com/bastelsblog) for [@voxpupuliorg](https://twitter.com/voxpupuliorg)]
 
 ---
 
@@ -557,9 +536,11 @@ background-size: cover
 
 * Trigger the automated release process
 
+* Work on our style/review guidelines at [https://voxpupuli.org/docs/#reviewing-a-module-pr](https://voxpupuli.org/docs/#reviewing-a-module-pr)
+
 ]
 
-.footnote[@bastelsblog for @voxpupuliorg]
+.footnote[[@bastelsblog](https://twitter.com/bastelsblog) for [@voxpupuliorg](https://twitter.com/voxpupuliorg)]
 
 ---
 
@@ -570,7 +551,7 @@ background-size: cover
 
 .left-column[
 
-## Summary
+### Summary
 
 ]
 
@@ -582,7 +563,7 @@ background-size: cover
 
 ]
 
-.footnote[@bastelsblog for @voxpupuliorg]
+.footnote[[@bastelsblog](https://twitter.com/bastelsblog) for [@voxpupuliorg](https://twitter.com/voxpupuliorg)]
 
 ---
 
@@ -593,7 +574,7 @@ background-size: cover
 
 .left-column[
 
-## Summary
+### Summary
 
 ]
 
@@ -611,9 +592,13 @@ background-size: cover
 
   * Ping us, migrate it to us
 
+* You have domain specific knowledge?
+
+  * Ruby, Python, Rspec, Beaker, $software we automate
+
 ]
 
-.footnote[@bastelsblog for @voxpupuliorg]
+.footnote[[@bastelsblog](https://twitter.com/bastelsblog) for [@voxpupuliorg](https://twitter.com/voxpupuliorg)]
 
 ---
 
@@ -624,7 +609,7 @@ background-size: cover
 
 .left-column[
 
-## Summary
+### Summary
 
 ]
 
@@ -640,9 +625,13 @@ Contact:
 
 * Slack: #voxpupuli on puppetcommunity.slack.com
 
+* voxpupuli@groups.io
+
 * pmc@voxpupuli.org
 
 * tim@bastelfreak.de
+
+* More talks at [https://github.com/bastelfreak/talks](https://github.com/bastelfreak/talks#collection-of-talks-proposals-and-related-stuff)
 
 ### Thanks for your attention!
 
